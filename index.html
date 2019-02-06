@@ -1,37 +1,103 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Index</title>
 
-<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 
-	<style type="text/css">
-		body{
-			background-color: black;
-			color: white;
-		}
-	h1{
-		font-family: 'Staatliches', cursive;
-	}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	p{
-		text-align: justify;
-	}		
-		
-	</style>
+
+	<title>Welcome</title>
+
+<link rel="stylesheet" type="text/css" href="./style.css">
+
 </head>
 <body>
 
-	<h1>This is an Index Example</h1>
+<!-- C3P0 -->
 
-	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</p>
+<div class="block">    
+  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/50923e60147823.5a3dea787042a.jpg" data-speed="1" class="img-parallax" alt="C3PO">
+  <h2 id="name"> Andres Grijalva </h2>
+</div>
 
+<!-- Frostbite -->
+<div class="block">
+
+  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800/b7ec3f71563617.5bc9620c70ed8.jpg" 
+  data-speed="-1" class="img-parallax" alt="F82 Frostbite">
+
+
+
+<!-- Button Starts -->
+	<button class="btn"> <a href="home.html"> Learn More </a> </button>
+
+
+
+<!-- Social Media Links Starts -->
+
+<!-- Instagram -->
+	<a href="https://www.instagram.com/andresrgm/">
+    <img id="buttons" class="social-media" src="logo/instagram.png">
+  </a>  
+
+<!-- Behance -->
+<a href="https://www.behance.net/andresrafa7640">
+	<img id="buttons" class="social-media2" src="logo/behance.png">
+</a>
+
+<!-- Facebook -->
+<a href="https://www.facebook.com/andramcorp/">
+	<img id="buttons" class="social-media3" src="logo/facebook.png">
+</a>
+
+</div>
+
+<!-- Social Media Links Ends -->
+
+
+
+<!-- java -->
+
+<script type="text/javascript">
+	
+	$('.img-parallax').each(function(){
+  var img = $(this);
+  var imgParent = $(this).parent();
+  function parallaxImg () {
+    var speed = img.data('speed');
+    var imgY = imgParent.offset().top;
+    var winY = $(this).scrollTop();
+    var winH = $(this).height();
+    var parentH = imgParent.innerHeight();
+
+
+    // The next pixel to show on screen      
+    var winBottom = winY + winH;
+
+    // If block is shown on screen
+    if (winBottom > imgY && winY < imgY + parentH) {
+      // Number of pixels shown after block appear
+      var imgBottom = ((winBottom - imgY) * speed);
+      // Max number of pixels until block disappear
+      var imgTop = winH + parentH;
+      // Porcentage between start showing until disappearing
+      var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 50));
+    }
+    img.css({
+      top: imgPercent + '%',
+      transform: 'translate(-50%, -' + imgPercent + '%)'
+    });
+  }
+  $(document).on({
+    scroll: function () {
+      parallaxImg();
+    }, ready: function () {
+      parallaxImg();
+    }
+  });
+});
+
+</script>
 
 </body>
 </html>

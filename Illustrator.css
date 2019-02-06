@@ -1,0 +1,104 @@
+/*Nav*/
+#nav a{
+	text-decoration: none; 
+	color: white;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+#nav li{
+  float: right;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(37, 40, 47);
+  }
+
+
+.green{
+	height: 2px;
+	background-color: rgba(184, 252, 80, .6);
+}
+
+
+
+
+#logo{
+  height: 130px;
+  margin-left: 3%;
+  opacity: .6;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgba(83, 172, 172, .5);
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/*------------------------------------------*/
+
+
+/*Grid*/
+
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+
+h4{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Id</title>
+
+<!-- Links -->
+<!-- css link --> <link rel="stylesheet" type="text/css" href="./illustrator.css">
+
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC" />
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+
+	
+</head>
+<body>
+
+<!-- Navigation -->
+<ul id="nav">
+		<li> <a href="#Contact"> Contact </a> </li>
+		<li> <a href="albums.html"> Albums </a> </li>
+		<li> <a href="home.html">Home</a> </li>
+	</ul> 
+ <div class="green"></div> <!-- green bar -->
+
+
+
+<!-- Grid -->
+
+<!-- !PAGE CONTENT! -->
+
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>InDesign</b></h1>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+  	<h4>Broushure </h4>
+    <img src="albums/Id/Broushure/brou-front.png" style="width:100%">
+    <br> <br>
+    <img src="albums/Id/Broushure/brou-back.jpg" style="width:100%">
+    <br> <br>
+   
+  </div>
+
+  <div class="w3-third">
+     <h4>Magazine - Fall Collection </h4>
+    <img src="albums/Id/Fall_Collection/fall_1.jpg" style="width:100%">
+    <img src="albums/Id/Fall_Collection/fall_2.jpg" style="width:100%">
+    <img src="albums/Id/Fall_Collection/fall_3.jpg" style="width:100%">
+    <img src="albums/Id/Fall_Collection/fall_4.jpg" style="width:100%">
+
+  </div>
+
+  <div class="w3-third">
+    <h4>Magazine - Foodies</h4>
+    <img src="albums/Id/Foodies/foodie-1.png" style="width:100%">
+    <img src="albums/Id/Foodies/foodie-2.jpg" style="width:100%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  
+  <p class="w3-medium">by < ARGM > </p>
+</footer>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+
+
+
+					
+
+</body>
+</html>

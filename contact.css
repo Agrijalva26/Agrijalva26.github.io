@@ -1,0 +1,114 @@
+/*Nav*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-family: 'Amatic SC', cursive;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.green{
+  height: 2px;
+  background-color: rgba(184, 252, 80, .6);
+}
+
+
+/*Parallax*/
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  background-image: 
+  url('https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/7486f067204681.5b319937642e3.jpg');
+  height: 100%; 
+  background-color: rgba(213, 208, 212, 0.4);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.paragraph{
+font-family: 'Amatic SC', cursive;
+margin-bottom: 22%;
+height:100px;
+font-size:200px; 
+text-align:center;
+}
+
+.parallax2{
+  background-image: 
+  url(https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/0dd44d67204681.5b3199375430c.jpg);
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#career{
+ font-family: 'Amatic SC', cursive;
+ text-align: center;
+ font-size: 40pt;
+
+}
+
+.social{
+  margin-top: 30%;
+  margin-left: 3%;
+  width: 120px;
+  height: 120px;
+}
+
+.social:hover{
+  background-color: grey;
+  opacity: 0.3;
+}
+
+.instagram{
+ margin-left: 32%; 
+}
+
+
+/*Phone size*/
+
+@media only screen and (max-width: 600px){
+.name{
+  font-size: 60pt;
+  }
+
+  .social{
+    height: 15%;
+    width: 15%;
+    margin-top: 15%;
+  }
+
+  .instagram{
+    margin-left: 20%;
+  }
+}
+
+
+
+
+

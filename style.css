@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Amatic SC', cursive;
+}
+.block{
+  width: 100%;
+  height: 81%;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.block h2{
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10vw;
+  color: white;
+  font-weight: 400;
+}
+
+.block .btn{
+  position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(50, 49, 49);
+    color: lightgrey;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a{
+  text-decoration:none;
+  color: white;
+}
+
+
+
+.btn:hover{
+  background-color: rgba(211, 32, 52, 0.5);
+  
+
+}
+
+#name{
+  color: rgb(145, 192, 196);
+  font-size: 20vw;
+  text-shadow: -2px 2px #FF0000; 
+}
+
+.img-parallax {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  pointer-events: none
+}
+
+
+.social-media{
+  margin-top: 55%;
+  margin-left: 18%;
+  width: 50px;
+  position: absolute;
+  bottom: 50px; 
+}
+
+.social-media2{
+  margin-top: 55%;
+  margin-left: 25%;
+  width: 50px;
+  position: absolute;
+  bottom: 50px; 
+  left: 23%;
+}
+
+.social-media3{
+  margin-top: 55%;
+  margin-left: 23%;
+  width: 50px;
+  position: absolute;
+  bottom: 50px; 
+  left: 60%;
+}
+
+
+#buttons:hover{
+  background-color: rgba(145, 158, 160, 0.4);
+}
+
+
+/*Phone size*/
+
+@media only screen and (max-width: 600px){
+  body{
+    background-color: rgb(86, 107, 30);
+  }
+  .img-parallax{
+    width: 300%;
+  }
+  .social-media,
+  .social-media2,
+  .social-media3{
+    width:  7%;
+  }
+
+  .social-media{
+  right: 80%;
+  }
+  .social-media2{
+    left: 20%;
+  }
+  .social-media3{
+    left: 55%;
+  }
+}
+
+
+
+/*Tablet Size*/
+
+@media only screen and (min-width: 601px) and (max-width: 967px){
+  body{
+    background-color: rgb(48, 94, 102);
+  }
+  .img-parallax{
+    width: 200%;
+  }
+}
+
+/*Desktop size*/
+
+@media only screen and (min-width: 968px){
+  body{
+    background-color: rgb(169, 68, 66);
+  }
+  .img-parallax{
+    width: 100%;
+  }
+
+  .social-media,
+  .social-media2,
+  .social-media3{
+    width: 3%;
+  }
+  
+}
+
+
+
+
